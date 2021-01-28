@@ -1,0 +1,32 @@
+/*!
+ Theme Name: Techlove
+ Theme URI: http://underscores.me/
+ Author: Sam A
+ Author URI: http://techlove.se
+ Description: Description
+ Version: 1.0.0
+ Tested up to: 5.4
+ Requires PHP: 5.6
+ License: GNU General Public License v2 or later
+ License URI: LICENSE
+ Text Domain: techlove
+ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+ */
+ @import "sass/abstracts/abstracts";
+ @import "sass/generic/normalize";
+ @import "sass/generic/box-sizing";
+ @import "sass/base/base";
+ @import "sass/layouts/header";
+ @import "sass/components/components";
+ @import "sass/utilities/accessibility";
+ @import "sass/utilities/alignments";
+ 
+ #map {
+    height: 100% !important;
+  }
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
