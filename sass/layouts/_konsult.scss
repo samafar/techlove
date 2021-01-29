@@ -1,0 +1,16 @@
+.konsult-slider {
+  background: rgb(31, 31, 31);
+  height: 300px;
+}
+
+.konsult-list {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+
+  .konsult-firm {
+    flex: 1;
+    min-width: 320px;
+  }
+}

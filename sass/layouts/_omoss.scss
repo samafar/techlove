@@ -1,0 +1,25 @@
+.main-medarbetare {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .medarbetare {
+    background: mediumaquamarine;
+    flex: 1;
+    min-width: 320px;
+    height: 200px;
+  }
+}
+
+.omoss-welcome {
+  height: 200px;
+}
+
+.google-maps {
+  background: #eee;
+  height: 400px;
+}
+
+.keep-updated {
+  height: 400px;
+}

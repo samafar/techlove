@@ -1,5 +1,43 @@
-.main-slider {
-  display: flex;
-  height: 600px;
-  background:#004d99;
+.admin-bar header {
+  padding-top: 32px;
 }
+.main-header {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 60px;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+}
+.header-logo {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 4;
+  flex-direction: row-reverse;
+  min-width: 320px;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    li {
+      padding: 18px 20px;
+    }
+  }
+}
+.main-phone {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+

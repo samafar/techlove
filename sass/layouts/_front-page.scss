@@ -1,9 +1,12 @@
 .process-main {
   background: lightsalmon;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 
   .process {
     flex: 1;
+    min-width: 320px;
   }
 }
 
