@@ -1,5 +1,16 @@
 .main-slider {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 600px;
   background:#004d99;
+
+  h1 {
+    color: rgb(243, 203, 209);
+    font-size: 50px;
+  }
+  .sl-button {
+    margin: 5px;
+  }
 }
