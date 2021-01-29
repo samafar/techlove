@@ -8,5 +8,5 @@
 ?>
 
 <section class="company-logos">
-  company logoss
+  company logos
 </section>
