@@ -145,7 +145,7 @@ add_action( 'widgets_init', 'techlove_widgets_init' );
 function techlove_scripts() {
 	wp_enqueue_style( 'techlove-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'techlove-style', 'rtl', 'replace' );
-	wp_enqueue_style( 'karta', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=drawing&v=weekly' );
+
 
 	wp_enqueue_script( 'techlove-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'techlove-karta', get_template_directory_uri() . '/js/karta.js', array(), _S_VERSION, true );

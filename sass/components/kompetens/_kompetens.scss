@@ -1,0 +1,17 @@
+.kompetens {
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  
+  .kompetens-picture {
+    background: lightgoldenrodyellow;
+    min-width: 320px;
+    flex: 1;
+  }
+  .kompetens-right {
+    background: #004d99;
+    min-width: 320px;
+    flex: 1;
+  }
+}

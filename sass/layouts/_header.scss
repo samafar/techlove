@@ -1,0 +1,22 @@
+.main-header {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+.header-logo {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.main-nav {
+  display: flex;
+  flex: 4;
+  flex-direction: row-reverse;
+}
+.main-phone {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}

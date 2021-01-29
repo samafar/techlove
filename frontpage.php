@@ -4,17 +4,25 @@
  */
 
 get_header(); ?>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-<script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=drawing&v=weekly"
-    defer></script>
+
+<?php include ( 'components/slider.php' ); ?>
 
 <main>
-    Startsidan
-    <div id="map"></div>
+  <?php include ( 'components/logos.php' ); ?>
+
+  <section class="kompetens">
+    <div class="kompetens-picture">
+      bild
+    </div>
+    <div class="kompetens-right">
+      Kompetensområden
+    </div>
+  </section>
+
+  <div class="process">
+    process
+  </div>
+
 </main>
-
-<script>
-
-</script>
-<?php get_footer(); ?>
+<?php 
+get_footer();

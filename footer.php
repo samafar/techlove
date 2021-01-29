@@ -4,18 +4,17 @@
  *
  * Contains the closing of the #content div and all content after.
  *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
  * @package Techlove
  */
 
 ?>
 
-<footer>
-    Sidfot
-</footer>
 
 </div><!-- #page -->
+
+<footer>
+
+</footer>
 
 <?php wp_footer(); ?>
 
