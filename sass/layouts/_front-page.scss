@@ -1,4 +1,28 @@
-.process {
+.process-main {
   background: lightsalmon;
   display: flex;
+
+  .process {
+    flex: 1;
+  }
+}
+
+.about-us {
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+
+  .about-us-child-1 {
+    background: lightyellow;
+    flex: 1;
+    min-width: 320px;
+  }
+  .about-us-child-2 {
+    flex: 1;
+    min-width: 320px;
+  }
+}
+
+.aktuellt {
+  height: 200px;
 }

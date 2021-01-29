@@ -11,6 +11,3 @@
   .main-slider
 
 </slider>
-
-<?php 
-get_footer();

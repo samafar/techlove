@@ -9,4 +9,5 @@
 
 <section class="company-logos">
   company logos
+
 </section>
