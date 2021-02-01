@@ -1,17 +1,19 @@
 .kompetens {
-  height: 400px;
   display: flex;
   flex-direction: row;
-  flex-flow: wrap;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
   
   .kompetens-picture {
-    background: lightgoldenrodyellow;
-    min-width: 320px;
     flex: 1;
+    figure {
+      margin: 0;
+      padding: 0;
+    }
   }
   .kompetens-right {
-    background: #004d99;
-    min-width: 320px;
+    background: #133d68;
     flex: 1;
   }
 }

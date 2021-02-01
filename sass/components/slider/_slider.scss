@@ -4,13 +4,30 @@
   justify-content: center;
   align-items: center;
   height: 600px;
-  background:#004d99;
+  background-image: url('http://localhost/techlove/wp-content/uploads/2021/02/keyboard.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 
   h1 {
     color: rgb(243, 203, 209);
     font-size: 50px;
+    z-index: 1;
+  }
+  .slider-buttons {
+    z-index: 1;
   }
   .sl-button {
     margin: 5px;
+  }
+  .overlay {
+    position: absolute;
+    background: rgb(62, 44, 83);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: .8;
+    z-index: 0;
   }
 }

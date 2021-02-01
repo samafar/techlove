@@ -2,4 +2,10 @@
   background: lightgray;
   height: 250px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  .logo {
+    padding: 20px;
+  }
 }

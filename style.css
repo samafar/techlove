@@ -459,7 +459,7 @@ textarea {
 }
 
 .process-main {
-  background: lightsalmon;
+  background: #f1e5e1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -469,14 +469,21 @@ textarea {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 200px;
 }
 
 .process-main .process {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  min-width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px;
 }
 
 .about-us {
@@ -485,7 +492,6 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 300px;
 }
 
 .about-us .about-us-child-1 {
@@ -494,6 +500,7 @@ textarea {
       -ms-flex: 1;
           flex: 1;
   min-width: 320px;
+  padding: 20px;
 }
 
 .about-us .about-us-child-2 {
@@ -501,6 +508,7 @@ textarea {
       -ms-flex: 1;
           flex: 1;
   min-width: 320px;
+  padding: 20px;
 }
 
 .aktuellt {
@@ -587,6 +595,7 @@ textarea {
   top: 0;
   width: 100%;
   background: #fff;
+  z-index: 999;
 }
 
 .header-logo {
@@ -665,16 +674,35 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   height: 600px;
-  background: #004d99;
+  background-image: url("http://localhost/techlove/wp-content/uploads/2021/02/keyboard.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .main-slider h1 {
   color: #f3cbd1;
   font-size: 50px;
+  z-index: 1;
+}
+
+.main-slider .slider-buttons {
+  z-index: 1;
 }
 
 .main-slider .sl-button {
   margin: 5px;
+}
+
+.main-slider .overlay {
+  position: absolute;
+  background: #3e2c53;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: .8;
+  z-index: 0;
 }
 
 /* Company Logos
@@ -685,12 +713,23 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.company-logos .logo {
+  padding: 20px;
 }
 
 /* Kompetensområden
 --------------------------------------------- */
 .kompetens {
-  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -698,21 +737,25 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .kompetens .kompetens-picture {
-  background: lightgoldenrodyellow;
-  min-width: 320px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
+.kompetens .kompetens-picture figure {
+  margin: 0;
+  padding: 0;
+}
+
 .kompetens .kompetens-right {
-  background: #004d99;
-  min-width: 320px;
+  background: #133d68;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -865,7 +908,34 @@ textarea {
 }
 
 footer {
-  background: #778a80;
-  height: 400px;
+  background: #9DB1A6;
+}
+
+footer .footer_top h3 {
+  font-size: 50px;
+}
+
+footer .footer_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .footer_container .footer_left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer .footer_container .footer_right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 /*# sourceMappingURL=style.css.map */

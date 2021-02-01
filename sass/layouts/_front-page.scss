@@ -1,29 +1,32 @@
 .process-main {
-  background: lightsalmon;
+  background: rgb(241, 229, 225);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 200px;
 
   .process {
     flex: 1;
-    min-width: 320px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
   }
 }
 
 .about-us {
   display: flex;
   flex-wrap: wrap;
-  height: 300px;
-
+  
   .about-us-child-1 {
     background: lightyellow;
     flex: 1;
     min-width: 320px;
+    padding: 20px;
   }
   .about-us-child-2 {
     flex: 1;
     min-width: 320px;
+    padding: 20px;
   }
 }
 
