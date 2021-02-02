@@ -226,7 +226,7 @@ select,
 optgroup,
 textarea {
   color: #404040;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -386,6 +386,9 @@ input[type="submit"] {
   border: 1px solid;
   border-radius: 3px;
   padding: 8px 15px 10px 15px;
+  cursor: pointer;
+  min-width: 155px;
+  border-radius: 62px;
 }
 
 button:hover,
@@ -406,7 +409,16 @@ input[type="submit"]:focus {
 }
 
 .sl-button {
-  background: #f3cbd1;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.sl-button:hover {
+  background: #fff;
+  -webkit-transition: .4s;
+  transition: .4s;
+  color: #2f3e53;
 }
 
 input[type="text"],
@@ -456,6 +468,56 @@ select {
 
 textarea {
   width: 100%;
+}
+
+.who_we_are {
+  background: #2f3e53;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.who_we_are .frontpage_conference_image {
+  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+          clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  opacity: 50%;
+}
+
+.who_we_are .we_are {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.who_we_are .we_are h3 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 35px;
+  max-width: 800px;
 }
 
 .process-main {
@@ -574,6 +636,75 @@ textarea {
   min-width: 320px;
 }
 
+#myInput {
+  margin: 10px;
+  padding: 10px;
+}
+
+#knslt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#knslt .konsult-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #202046;
+  min-width: 200px;
+  min-height: 200px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.filterDiv {
+  float: left;
+  background-color: #202046;
+  color: #ffffff;
+  margin: 2px;
+  display: none;
+  padding: 40px;
+  width: 140px;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
 /* Navigation
 --------------------------------------------- */
 .admin-bar header {
@@ -674,16 +805,26 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   height: 600px;
-  background-image: url("http://localhost/techlove/wp-content/uploads/2021/02/keyboard.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  background: #2f3e53;
+}
+
+.main-slider .main_slider_title {
+  max-width: 900px;
+}
+
+.main-slider span {
+  font-weight: 300;
+  color: #D89D91;
 }
 
 .main-slider h1 {
-  color: #f3cbd1;
+  color: #fff;
   font-size: 50px;
   z-index: 1;
+  text-align: center;
 }
 
 .main-slider .slider-buttons {
@@ -694,36 +835,36 @@ textarea {
   margin: 5px;
 }
 
-.main-slider .overlay {
-  position: absolute;
-  background: #3e2c53;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  opacity: .8;
-  z-index: 0;
-}
-
 /* Company Logos
 --------------------------------------------- */
 .company-logos {
-  background: lightgray;
-  height: 250px;
+  background: #2f3e53;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.company-logos h3 {
+  font-size: 40px;
+  color: #fff;
+}
+
+.company-logos .logos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
-.company-logos .logo {
+.company-logos .logos .logo {
   padding: 20px;
 }
 
@@ -747,11 +888,6 @@ textarea {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-}
-
-.kompetens .kompetens-picture figure {
-  margin: 0;
-  padding: 0;
 }
 
 .kompetens .kompetens-right {

@@ -14,3 +14,60 @@
     min-width: 320px;
   }
 }
+#myInput {
+  margin: 10px;
+  padding: 10px;
+}
+#knslt {
+  display: flex;
+  flex-wrap: wrap;
+  
+  .konsult-box {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+    justify-content: center;
+    background: rgb(32, 32, 70);
+    min-width: 200px;
+    min-height: 200px;
+    padding: 10px;
+    margin: 10px;
+  }
+}
+.filterDiv {
+  float: left;
+  background-color: #202046;
+  color: #ffffff;
+  margin: 2px;
+  display: none;
+  padding: 40px;
+  width: 140px;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}

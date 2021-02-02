@@ -5,6 +5,9 @@ input[type="submit"] {
 	border: 1px solid;
 	border-radius: 3px;
 	padding: 8px 15px 10px 15px;
+	cursor: pointer;
+	min-width: 155px;
+	border-radius: 62px;
 
 	&:hover {
 		border-color: $color__border-button-hover;
@@ -17,5 +20,12 @@ input[type="submit"] {
 }
 
 .sl-button {
-	background: #f3cbd1;
+	background: $background_none;
+	border: 1px solid $white;
+	color: $white;
+	&:hover {
+		background: $white;
+		transition: .4s;
+		color: $main_color;
+	}
 }

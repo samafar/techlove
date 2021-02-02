@@ -144,6 +144,7 @@ function techlove_scripts() {
 	wp_enqueue_style( 'techlove-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'techlove-style', 'rtl', 'replace' );
 
+	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap', false );
 
 	// wp_enqueue_script( 'techlove-jquery', 'https://code.jquery.com/jquery-3.5.1.min.js', array(), _S_VERSION, true );		
 	

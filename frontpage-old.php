@@ -1,6 +1,6 @@
 <?php 
 /**
- * Template Name: Front page
+ * Template Name: Front page gammal
  */
 
 get_header(); ?>
@@ -10,17 +10,6 @@ get_header(); ?>
 <?php acf_localize_data(array( 'foo' => 'bar' )); ?>
 
 <main>
-
-  <section class="who_we_are">
-    <img class="frontpage_conference_image"
-      src="http://localhost/techlove/wp-content/uploads/2021/02/frontpage-image.png" alt="Frontpage image">
-    <div class="we_are">
-      <h3>För oss är det viktigt att alla våra medarbetare trivs på jobbet och mår bra. Vi vill att det ska kännas som
-        att komma hem när du går till jobbet, fast lite roligare och mer utvecklande såklart.</h3>
-      <button>Läs mer om vilka vi är</button>
-    </div>
-  </section>
-
   <?php include ( 'components/logos.php' ); ?>
 
   <section class="kompetens">

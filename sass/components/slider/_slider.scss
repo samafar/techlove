@@ -4,15 +4,24 @@
   justify-content: center;
   align-items: center;
   height: 600px;
-  background-image: url('http://localhost/techlove/wp-content/uploads/2021/02/keyboard.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  background: $main_color;
 
+  .main_slider_title {
+    max-width: 900px;
+  }
+
+  span {
+    font-weight: $font_weight_light;
+    color: #D89D91;
+  }
   h1 {
-    color: rgb(243, 203, 209);
-    font-size: 50px;
+    color: $white;
+    font-size: $slider_font_size;
     z-index: 1;
+    text-align: center;
   }
   .slider-buttons {
     z-index: 1;
@@ -20,14 +29,5 @@
   .sl-button {
     margin: 5px;
   }
-  .overlay {
-    position: absolute;
-    background: rgb(62, 44, 83);
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    opacity: .8;
-    z-index: 0;
-  }
+
 }

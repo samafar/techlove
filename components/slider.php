@@ -8,14 +8,15 @@
 ?>
 
 <div class="main-slider">
-  <div class="overlay"></div>
-  <h1>Tech Relations</h1>
+  <div class="main_slider_title">
+    <h1>Vi är en <span>modern konsultbyrå</span> med fokus på kompetens, öppenhet och lekfullhet</h1>
+  </div>
   <div class="slider-buttons">
     <button class="sl-button">
-      Hitta konsulter
+      Våra konsulter
     </button>
     <button class="sl-button">
-      Hitta uppdrag
+      Våra uppdrag
     </button>
   </div>
 </div>
